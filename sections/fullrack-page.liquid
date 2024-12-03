@@ -1,0 +1,86 @@
+<div>
+  {% for block in section.blocks %}
+    <div id="slide{{ forloop.index }}" class="slide">
+      <div id="contenidoSlide{{ forloop.index }}">
+        <h2 id="tituloSlide{{ forloop.index }}"> {{ block.settings.title }} </h2>
+        <div id="textoSlide{{ forloop.index }}">
+          <p>{{ block.settings.tagline }}</p>
+        </div>
+      </div>
+    </div>
+
+   
+  {% endfor %}
+
+  <style>
+    {% for block in section.blocks %}
+  
+      #slide{{ forloop.index }} {
+        background-image: url({{ block.settings.image | img_url: '2000x' }});
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+      #contenidoSlide{{ forloop.index }} {
+        position: sticky;
+        height: 100%;
+        padding: 100px;
+      }
+      #tituloSlide{{ forloop.index }} {
+        margin-top: 0px;
+      }
+  
+    {% endfor %}
+  </style>
+</div>
+
+{% schema %}
+{
+  "name": "Parallax Slider",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Choose an image for Slide"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Slide Title",
+          "default": "Slide"
+        },
+        {
+          "type": "text",
+          "id": "tagline",
+          "label": "Slide Tagline",
+          "default": "Lorem impsu dolor sit amet"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Enlace pagina"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Parallax Slider",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+ 
+{% endjavascript %}

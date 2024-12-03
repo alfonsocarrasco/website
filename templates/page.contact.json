@@ -1,0 +1,79 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 16,
+        "padding_bottom": 60
+      }
+    },
+    "16644202474a45aa5d": {
+      "type": "image-with-text",
+      "blocks": {
+        "1664420247cf141c01-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Proyecto especial?",
+            "heading_size": "h1"
+          }
+        },
+        "1664420247cf141c01-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Conversemos en por mensaje instantáneo, estaremos encantados de escucharte y trabajar juntos.</p>",
+            "text_style": "body"
+          }
+        },
+        "1664420247cf141c01-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "WhatsApp",
+            "button_link": "https://whatsa.me/524772349861/?t=Hola,%20tengo%20un%20proyecto%20que%20puede%20ser%20de%20tu%20inter%C3%A9s!!!"
+          }
+        }
+      },
+      "block_order": [
+        "1664420247cf141c01-0",
+        "1664420247cf141c01-1",
+        "1664420247cf141c01-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/photo-of-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-male-worker-in-an-orange-protective-helmet.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "form",
+    "16644202474a45aa5d"
+  ]
+}

@@ -1,0 +1,320 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "La empresa",
+            "heading_size": "h0"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "Ingeniería dedicada al diseño de carros, racks y equipos a fines. Sus más de 10 años de experiencia en el mercado respaldan la calidad de sus productos.",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Imagen_presentacion_1.jpg",
+        "image_overlay_opacity": 70,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "16643823406ea6b297": {
+      "type": "image-banner",
+      "blocks": {
+        "1664382340747cac2a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nuestros Productos",
+            "heading_size": "h1"
+          }
+        },
+        "1664382340747cac2a-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Ver más",
+            "button_link_1": "shopify://collections",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1664382340747cac2a-0",
+        "1664382340747cac2a-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/k1bM577o.jpg",
+        "image_overlay_opacity": 60,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "16644183712cccba5f": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "subtitle",
+        "collection": "racks-de-pintura",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "outline",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 24,
+        "padding_bottom": 32
+      }
+    },
+    "166430573980d915d6": {
+      "type": "image-banner",
+      "blocks": {
+        "16643057380ab5b4a1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Servicios que ofrecemos",
+            "heading_size": "h1"
+          }
+        },
+        "906139c9-a6e4-4ab8-b0ca-554a3ca81022": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Ver más",
+            "button_link_1": "shopify://collections",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16643057380ab5b4a1-0",
+        "906139c9-a6e4-4ab8-b0ca-554a3ca81022"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/banner375a.jpg",
+        "image_overlay_opacity": 70,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": true
+      }
+    },
+    "1664418863e45ad453": {
+      "type": "multicolumn",
+      "blocks": {
+        "16644188638409d366-1": {
+          "type": "column",
+          "settings": {
+            "title": "Soldadura",
+            "text": "",
+            "link_label": "Ver",
+            "link": "shopify://blogs/servicios/soldadura"
+          }
+        },
+        "16644188638409d366-2": {
+          "type": "column",
+          "settings": {
+            "title": "Maquinado CNC",
+            "text": "",
+            "link_label": "Ver",
+            "link": "shopify://blogs/servicios/maquinado"
+          }
+        },
+        "05fdef02-45f5-454d-a942-e6abb0841538": {
+          "type": "column",
+          "settings": {
+            "title": "Maquinado convencional",
+            "text": "",
+            "link_label": "Ver",
+            "link": "shopify://blogs/servicios/maquinado-convencional"
+          }
+        },
+        "371e70be-6de7-4370-8f15-dfa2691cf549": {
+          "type": "column",
+          "settings": {
+            "title": "Corte y doblez de metales",
+            "text": "",
+            "link_label": "Ver",
+            "link": "shopify://blogs/servicios/corte-de-metales"
+          }
+        }
+      },
+      "block_order": [
+        "16644188638409d366-1",
+        "16644188638409d366-2",
+        "05fdef02-45f5-454d-a942-e6abb0841538",
+        "371e70be-6de7-4370-8f15-dfa2691cf549"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Contáctanos",
+        "button_link": "shopify://pages/contact",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "5a5719b3-c15a-4f59-828a-ae0a9ee48f98": {
+      "type": "gallery",
+      "blocks": {
+        "template--16496863510759__5a5719b3-c15a-4f59-828a-ae0a9ee48f98-16650212844c43c07b-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Imagen_para_usar_en_parte_de_nosotros.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--16496863510759__5a5719b3-c15a-4f59-828a-ae0a9ee48f98-16650212844c43c07b-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/minsk-belarus-dec-15-2021-car-bodies-are-on-assembly-line-factory-for-production-of-cars-modern-automotive-industry-electric-car-factory-conveyor.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "template--16496863510759__5a5719b3-c15a-4f59-828a-ae0a9ee48f98-16650212844c43c07b-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/photo-of-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-interior-of-hightech-factory-modern-production.jpg",
+            "alignment": "center center",
+            "enlarge_image": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "597bc83a-efe8-497b-a833-03be8166f033": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/photo-of-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-male-worker-in-an-orange-protective-helmet.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        },
+        "47236333-ad38-4d50-ab41-1e1e4a047c5e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Sin-titulo-2.jpg",
+            "alignment": "center center",
+            "enlarge_image": false,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "template--16496863510759__5a5719b3-c15a-4f59-828a-ae0a9ee48f98-16650212844c43c07b-1",
+        "template--16496863510759__5a5719b3-c15a-4f59-828a-ae0a9ee48f98-16650212844c43c07b-2",
+        "template--16496863510759__5a5719b3-c15a-4f59-828a-ae0a9ee48f98-16650212844c43c07b-3",
+        "597bc83a-efe8-497b-a833-03be8166f033",
+        "47236333-ad38-4d50-ab41-1e1e4a047c5e"
+      ],
+      "settings": {
+        "grid": 4,
+        "desktop_image_height": 300,
+        "mobile_image_height": 200,
+        "title_size": 26,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": true,
+        "use_alt_bg": true,
+        "enable_carousel": true,
+        "overlay_style": "no_background",
+        "button_style": "link"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "16643823406ea6b297",
+    "16644183712cccba5f",
+    "166430573980d915d6",
+    "1664418863e45ad453",
+    "5a5719b3-c15a-4f59-828a-ae0a9ee48f98"
+  ]
+}

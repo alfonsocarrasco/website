@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "small"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": false,
+            "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "content"
+      ],
+      "settings": {}
+    },
+    "78f27d74-e746-4114-9bf9-638ff738ad02": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "heading": "Contáctanos",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f0f00539-69b1-4d12-9b4b-1e2e87c903f8": {
+      "type": "gallery",
+      "blocks": {
+        "template--16496863215847__f0f00539-69b1-4d12-9b4b-1e2e87c903f8-166502429820997fae-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/photo-of-automobile-production-line-welding-car-body-modern-car-assembly-plant-auto-industry-interior-of-hightech-factory-modern-production.jpg",
+            "alignment": "center center",
+            "enlarge_image": true,
+            "subheading": "",
+            "title": "",
+            "button_label": "",
+            "link": "",
+            "text_alignment": "bottom left"
+          }
+        }
+      },
+      "block_order": [
+        "template--16496863215847__f0f00539-69b1-4d12-9b4b-1e2e87c903f8-166502429820997fae-0"
+      ],
+      "settings": {
+        "grid": 2,
+        "desktop_image_height": 300,
+        "mobile_image_height": 150,
+        "title_size": 30,
+        "title_size_mobile": 22,
+        "enable_margin": true,
+        "enable_row_spacing": true,
+        "full_width": true,
+        "use_alt_bg": false,
+        "enable_carousel": true,
+        "overlay_style": "no_background",
+        "button_style": "primary"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "78f27d74-e746-4114-9bf9-638ff738ad02",
+    "f0f00539-69b1-4d12-9b4b-1e2e87c903f8"
+  ]
+}

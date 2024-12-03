@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+						<html>
+						<head>
+							<title></title>
+							<meta name="viewport" content="width=device-width, initial-scale=1">
+							<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+							<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+						
+							<style type="text/css">
+								.caption{ 
+									margin-bottom: 33px;
+								}
+								 .caption a{ text-decoration: none; color: #000; } 
+								 .caption a:hover{ text-decoration: none; color: #000; } 
+								 .caption h3{    
+											  font-size: 16px;
+												padding-top: 5px;
+												margin: 0px;
+												} 
+							  .fancybox-button--zoom{
+							  display:none !important;
+							  }
+							  .fancybox-is-open .fancybox-stage {
+							overflow: hidden;
+							background-color: rgba(0,0,0, 0.77);
+						}
+						 
+						
+						img {
+						  max-width: 100%;
+						  display: block;
+						}
+						
+						figure {
+						  margin: 0;
+						  display: grid;
+						  grid-template-rows: 1fr auto;
+						  margin-bottom: -16px;
+						  break-inside: avoid;
+						}
+						
+						figure > img {
+						  grid-row: 1 / -1;
+						  grid-column: 1;
+						}
+						
+						figure a {
+						  color: black;
+						  text-decoration: none;
+						}
+						
+						figcaption {
+						  grid-row: 2;
+						  grid-column: 1;
+						  background-color: rgba(255,255,255,.5);
+						  padding: .2em .5em;
+						  justify-self: start;
+						}
+						
+						
+						
+						
+						
+							</style>
+						</head>
+						<body>
+						
+							<div class="container">
+						
+							</div>
+						  <input type='hidden' id='shopurl' value='{{shop.url}}' />
+						  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
+						  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" async></script>
+						  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js" async></script>
+						  <script type="text/javascript" async>
+							//$("a.grouped_elements").fancybox();
+						  </script>
+						  <script async>
+						const dsimagegalleryTimeOut = setTimeout(dsimagegallery, 1000);
+						function dsimagegallery() {
+								  data = {};
+								  var shopurl =$('#shopurl').val(); 
+                                   var shopname1 = shopurl.replace('.myshopify.com', '');
+                                   var shopname = shopname1.replace('https://', '');    
+								  jQuery.ajax({
+									type: 'GET',
+									url: 'https://apps-marketplace.dotsquares.com/picto-gallery/app_status.php?shopname='+shopname,
+									data: data,
+									success: function(data) {
+									  var obj = JSON.parse(data);
+				
+									  
+									if(obj[5] == "true")
+									{
+									$('.jam12').removeAttr('style');
+									$('.slider_heading').removeAttr('style');
+									}
+								   
+								 }
+				
+								});
+										jQuery.ajax({
+											type: 'GET',
+											url: 'https://apps-marketplace.dotsquares.com/picto-gallery/getallData.php?shopname='+shopname,
+											data: data,
+											dataType:'json',
+											success: function(data) {
+											  
+											 //console.log(data.length);
+											  
+											  
+											  var content = '';
+											for (i = 0; i < data.length; i++) {
+											  if(data[i].layout =='grid')
+											  {
+												if(data[i].columnSetting =='two')
+												{
+												content += '<div class="col-sm-6"><div class="caption"><a data-fancybox="gallery" href="https://apps-marketplace.dotsquares.com/picto-gallery/uploadimg/'+data[i].filesName +'"><img class="gallery-image" src="https://apps-marketplace.dotsquares.com/picto-gallery/uploadimg/'+data[i].filesName +'" width="100%" style="height: 300px;"></a></div></div>';
+												}
+												else if(data[i].columnSetting =='three')
+												{
+												  content += '<div class="col-sm-4"><div class="caption"><a data-fancybox="gallery" href="https://apps-marketplace.dotsquares.com/picto-gallery/uploadimg/'+data[i].filesName +'"><img class="gallery-image" src="https://apps-marketplace.dotsquares.com/picto-gallery/uploadimg/'+data[i].filesName +'" width="100%" style="height: 225px;"></a></div></div>';
+												}
+												else if(data[i].columnSetting =='four')
+												{
+												content += '<div class="col-sm-3"><div class="caption"><a data-fancybox="gallery" href="https://apps-marketplace.dotsquares.com/picto-gallery/uploadimg/'+data[i].filesName +'"><img class="gallery-image" src="https://apps-marketplace.dotsquares.com/picto-gallery/uploadimg/'+data[i].filesName +'" width="100%" style="height: 225px;"></a></div></div>';
+												}
+											  
+											  }
+											  else
+											  {
+												$(".container").css("column-count","4");
+												
+											  content += '<figure><figcaption><div class="caption"><a data-fancybox="gallery" href="https://apps-marketplace.dotsquares.com/picto-gallery/uploadimg/'+data[i].filesName +'"><img class="gallery-image" src="https://apps-marketplace.dotsquares.com/picto-gallery/uploadimg/'+data[i].filesName +'" alt="A windmill" /></a></div></figcaption></figure>';
+											  }
+											}
+											
+											$('.container').append(content); 
+										 }
+						
+										});
+						
+						  
+						}
+						</script>
+						</body>
+						</html>

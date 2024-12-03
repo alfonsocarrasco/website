@@ -1,0 +1,69 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "fullrack_section": {
+      "type": "fullrack-page",
+      "blocks": {
+        "image_tbkcFC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/background1.png",
+            "title": "Bread Cars",
+            "tagline": "Diseño y Fabricación de\tbread cars"
+          }
+        },
+        "image_HrTUTi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/metal-racks.png",
+            "title": "Metal Racks",
+            "tagline": "Diseño y Fabricación de\tracks para engomado de piezas plásticas"
+          }
+        },
+        "image_tCHfjn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/RacksforPaintingProcesses.png",
+            "title": "Racks Painting",
+            "tagline": "Diseño y Fabricación de\traks para procesos de pintura"
+          }
+        },
+        "image_tWAgjd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/dollies.jpg",
+            "title": "Racks & Dollie Metálicos",
+            "tagline": "Diseño y Fabricación de racks y dollie metálicos."
+          }
+        }
+      },
+      "block_order": [
+        "image_tbkcFC",
+        "image_HrTUTi",
+        "image_tCHfjn",
+        "image_tWAgjd"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "fullrack_section"
+  ]
+}

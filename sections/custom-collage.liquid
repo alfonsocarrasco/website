@@ -1,0 +1,39 @@
+<div class="customCollage">
+  {% for block in section.blocks %}
+  <div class="customBlock">
+    <img class="collageImage" src="{{block.settings.collage_image | image_url: 'large' }}">
+  </div>
+  {% endfor %}  
+</div>
+
+{% schema %}
+  {
+    "name": "Custom collage",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "collage image",
+        "type": "collage_image",
+        "settings":[
+          {
+            "type": "image_picker",
+            "id": "collage_image",
+            "label":"collage image"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Custom Collage"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+  console.log(selection.blocks);
+{% endjavascript %}

@@ -1,0 +1,91 @@
+<!-- Controles de navegación (miniaturas) -->
+  <div class="carousel-thumbnails">
+    {% for block in section.blocks %}
+      <button class="carousel-thumbnail" data-slide="{{ forloop.index0 }}">
+        <img src="{{ block.settings.image | image_url }}" height="150" alt="Thumbnail {{ forloop.index }}">
+      </button>
+    {% endfor %}
+  </div>
+
+{% schema %}
+{
+  "name": "Basic Shopify Carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Carousel Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Choose carousel image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Basic Carousel",
+      "category": "Custom"
+    }
+  ],
+  "max_blocks": 5
+}
+{% endschema %}
+
+{% stylesheet %}
+  /* Controles (miniaturas) */
+  .carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .carousel-thumbnail {
+    border: none;
+    background: none;
+    padding: 0;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .carousel-thumbnail img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
+
+  .carousel-thumbnail.active img {
+    opacity: 1;
+    border: 2px solid #fff; /* Indicador de imagen activa */
+  }
+{% endstylesheet %}
+
+{% javascript %}
+  document.addEventListener('DOMContentLoaded', function () {
+    
+    const thumbnails = Array.from(document.querySelectorAll('.carousel-thumbnail'));
+
+    // Mostrar la primera imagen por defecto
+   
+    thumbnails[0].classList.add('active');
+
+    // Función para mostrar la imagen seleccionada
+    function showSlide(index) {
+     
+      thumbnails.forEach((thumbnail, i) => {
+        thumbnail.classList.toggle('active', i === index);
+      });
+    }
+
+    // Evento para cuando se haga clic en las miniaturas
+    thumbnails.forEach((thumbnail, index) => {
+      thumbnail.addEventListener('click', () => {
+        showSlide(index);
+      });
+    });
+  });
+{% endjavascript %}
